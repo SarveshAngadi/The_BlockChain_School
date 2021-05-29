@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "187844153880",
+    "firebase_url": "https://the-blockchain-school.firebaseio.com",
+    "project_id": "the-blockchain-school",
+    "storage_bucket": "the-blockchain-school.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187844153880:android:8a44148e0cb44aa82fa96d",
+        "android_client_info": {
+          "package_name": "com.example.theblockchainschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187844153880-l4n24e1f12vuoksjj3f7oh69rngss009.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.theblockchainschool",
+            "certificate_hash": "c23d0956ab8c94819070b635e903224e7494511c"
+          }
+        },
+        {
+          "client_id": "187844153880-4oftnr12alc8jjisuguvh6bbsleeq1rf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATg26gnt4swMBxtUVg0Ojc_AQXhur2z2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187844153880-4oftnr12alc8jjisuguvh6bbsleeq1rf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

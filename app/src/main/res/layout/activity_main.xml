@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="400dp"
+        android:gravity="center_horizontal"
+        android:text="OR"
+        android:textColor="#ffffffff"
+        android:textSize="15sp"
+        app:fontFamily="@font/poppins">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/facebook"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Facebook"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/google2"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ABB4BD"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/input_fields"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="20dp"
+            android:padding="0dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/poppins"
+                android:textColor="#ffffff"
+                android:background="@null"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ABB4BD"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:passwordToggleEnabled="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="5dp"
+            android:padding="0dp"
+            android:background="@drawable/input_fields"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:fontFamily="@font/poppins"
+                android:textColor="#ffffffff"
+                android:background="@null"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#9144EC"
+            android:fontFamily="@font/poppins"
+            android:textAlignment="textEnd"
+            android:textSize="15sp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="end">
+        </TextView>
+
+
+        <Button
+            android:id="@+id/SignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:background="@drawable/login_and_signin_buttons"
+            android:textColor="#ffffffff"
+            android:fontFamily="@font/poppins"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            >
+        </Button>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Don't have an account?"
+                android:fontFamily="@font/poppins"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textEnd"
+                android:paddingLeft="65dp"
+                android:gravity="end">
+            </TextView>
+
+            <TextView
+                android:id="@+id/textregister"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Register Now"
+                android:fontFamily="@font/poppins"
+                android:textColor="#9144EC"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textStart"
+                android:gravity="start">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
