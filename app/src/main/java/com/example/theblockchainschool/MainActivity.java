@@ -42,6 +42,22 @@ public class MainActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), forget_password.class);
+                startActivity(intent);
+            }
+        });
+
+        textView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Register_activity.class);
+                startActivity(intent);
+            }
+        });
+
         if (user != null) {
             finish();
             startActivity(new Intent(MainActivity.this, CoursesHome.class));
@@ -55,22 +71,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     validate(email.getText().toString(), pass.getText().toString());
                 }
-            }
-        });
-
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, forget_password.class);
-                startActivity(intent);
-            }
-        });
-
-        textView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Register_activity.class);
-                startActivity(intent);
             }
         });
     }
